@@ -13,11 +13,11 @@ steps:
     Contents: '/**/*.*'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
-#- task: qetza.replacetokens.replacetokens-task.replacetokens@3
-#  displayName: 'Replace tokens in deployment.template.json'
-#  inputs:
-#    rootDirectory: EdgeSolution
-#    targetFiles: deployment.template.json
+- task: qetza.replacetokens.replacetokens-task.replacetokens@3
+  displayName: 'Replace tokens in deployment.template.json'
+  inputs:
+    rootDirectory: EdgeSolution
+    targetFiles: deployment.template.json
 
 #- task: qetza.replacetokens.replacetokens-task.replacetokens@3
 #  displayName: 'Replace tokens in modules/**/module.json'
