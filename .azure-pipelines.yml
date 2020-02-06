@@ -31,5 +31,12 @@ steps:
 #    deploymentid: 'azuredevops-deployment'
 #    templateFilePath: EdgeSolution/deployment.template.json
 
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo Write your commands here
+      
+      echo Hello world !!! good!!!
+
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
