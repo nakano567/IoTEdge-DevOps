@@ -25,11 +25,11 @@ steps:
 #    rootDirectory: EdgeSolution
 #    targetFiles: 'modules/**/module.json'
 
-- task: AzureIoTEdge@2
-  displayName: 'Azure IoT Edge - Build module images'
-  inputs:
-    deploymentid: 'azuredevops-deployment'
-    templateFilePath: EdgeSolution/deployment.template.json
+#- task: AzureIoTEdge@2
+#  displayName: 'Azure IoT Edge - Build module images'
+#  inputs:
+#    deploymentid: 'azuredevops-deployment'
+#    templateFilePath: EdgeSolution/deployment.template.json
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
